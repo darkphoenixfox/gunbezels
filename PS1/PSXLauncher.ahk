@@ -28,10 +28,9 @@ splitpath, game,,,,gamename ; extract only the filename without extension
 Run, %a_scriptdir%\SindenBezels\nomousy.exe /hide
 Sleep 100
 run, %a_scriptdir%\duckstation-qt-x64-ReleaseLTCG.exe `"%game%`" , %a_scriptdir%
-;move emu inside the bezel
 
-Sleep 2000
-WinMove,ahk_exe duckstation-qt-x64-ReleaseLTCG.exe, , 239, 15, 1440, 1050
+sleep 1000
+
 IfWinNotExist, frame
 {
 	SysGet, m1, Monitor, 1
